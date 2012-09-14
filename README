@@ -2,8 +2,7 @@
 sudo apt-get install puppet
 
 
+puppet apply manifests/package.pp
+puppet apply manifests/git.pp
 
-Install Git and configure
-* user name 
-* Email
-* Ignore files
+
