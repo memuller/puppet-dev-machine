@@ -8,10 +8,16 @@
 #}
 
 file { 'rspecrc':
-    path   => "/home/$id/.rspecrc",
+    path   => "/home/$id/.rspec",
     ensure => link,
-    target => '.dotfiles/rspecrc',
-#    require => Vcsrepo['dotfiles']
+    target => ".dotfiles/rspec",
+}
+
+
+file { 'gitignore':
+    path   => "/home/$id/.gitignore",
+    ensure => link,
+    target => ".dotfiles/gitignore",
 }
 
 
