@@ -3,3 +3,8 @@ exec { "rvm":
     provider => shell,
 }
 
+exec { "openssl":
+    command => 'rvm pkg openssl',
+    provider => shell,
+}
+
