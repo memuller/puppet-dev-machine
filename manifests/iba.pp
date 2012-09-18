@@ -28,3 +28,12 @@ exec{'create ess_test':
   command => 'mysqladmin -u root create ess_test',
   provider => shell,
 }
+
+exec{'drop dls_test':
+  command => 'mysqladmin -u root drop dls_test',
+  provider => shell,
+}
+exec{'create dls_test':
+  command => 'mysqladmin -u root create dls_test',
+  provider => shell,
+}

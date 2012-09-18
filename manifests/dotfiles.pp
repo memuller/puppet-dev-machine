@@ -27,3 +27,10 @@ file { 'gitconfig':
 }
 
 
+file { 'vimrc':
+    path   => "/home/$id/.vimrc",
+    ensure => link,
+    target => ".dotfiles/vim/vimrc"
+}
+
+
