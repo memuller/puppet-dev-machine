@@ -10,14 +10,20 @@
 file { 'rspecrc':
     path   => "/home/$id/.rspec",
     ensure => link,
-    target => ".dotfiles/rspec",
+    target => ".dotfiles/rspec"
 }
 
 
 file { 'gitignore':
     path   => "/home/$id/.gitignore",
     ensure => link,
-    target => ".dotfiles/gitignore",
+    target => ".dotfiles/gitignore"
+}
+
+file { 'gitconfig':
+    path   => "/home/$id/.gitconfig",
+    ensure => link,
+    target => ".dotfiles/gitconfig"
 }
 
 
