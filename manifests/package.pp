@@ -9,6 +9,7 @@ package{'vim-nox': }
 package{'ack-grep': }
 
 package{'redis-server': }
+package{'mongodb': }
 
 package{'mysql-server': }
 package{'mysql-client': }
